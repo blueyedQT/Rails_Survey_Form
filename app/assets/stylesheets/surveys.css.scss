@@ -1,3 +1,41 @@
 // Place all the styles related to the Surveys controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	margin: 25px auto;
+	width: 400px;
+}
+
+form {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.button {
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 200px;
+	background-color: blue;
+	color: white;
+	border: 1px solid black;
+}
+
+.submitted {
+	background-color: lightgreen;
+	border: 1px solid black;
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+
+.information {
+	border: 1px solid black;
+	padding: 0 10px;
+}
+
+p.info {
+	display: inline-block;
+	width: 160px;
+	padding: 0;
+	margin: 2px 10px;
+}

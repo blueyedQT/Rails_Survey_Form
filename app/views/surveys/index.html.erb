@@ -5,22 +5,24 @@
 		<% end %>
 	<% end %>
 	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-	<p>Your Name: <input type="text" name="dojo[name]"></p>
-	<p>Dojo Location: 
+	<p class="info">Your Name: </p><p class="info"><input type="text" name="dojo[name]"></p>
+	<p class="info">Dojo Location: </p>
+	<p class="info">
 		<select name="dojo[location]">
 			<option value="Mountian View">Mountian View</option>
 			<option value="Bellevue">Bellevue</option>
 			<option value="New York">New York</option>
 		</select>
 	</p>
-	<p>Favorite Language: 
+	<p class="info">Favorite Language: </p>
+	<p class="info">
 		<select name="dojo[language]">
 			<option value="JavaScript">JavaScript</option>
 			<option value="PHP">PHP</option>
 			<option value="Ruby">Ruby</option>
 		</select>
 	</p>
-	<p>Comment (optional): </p>
+	<p class="info">Comment (optional): </p>
 	<textarea name="dojo[comment]"></textarea>
-	<input type="submit" value="Submit">
+	<input class="button" type="submit" value="Submit">
 </form>
