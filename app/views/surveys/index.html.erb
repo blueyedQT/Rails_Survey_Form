@@ -1,4 +1,10 @@
-<form>
+<form action="surveys/check" method="post">
+	<% if @errors
+		@errors.each do |error| %>
+		<p class="red"><%= error %></p>
+		<% end %>
+	<% end %>
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 	<p>Your Name: <input type="text" name="dojo[name]"></p>
 	<p>Dojo Location: 
 		<select name="dojo[location]">
